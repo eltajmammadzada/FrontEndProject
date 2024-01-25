@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F3F8FE;
+}
+.CardUser {
+    width: 450px;
+    background-color: white;
+    display: flex;
+    gap: 16px;
+    border-radius: 20px;
+    padding: 23px;
+}
+.user {
+    width: 55px;
+    height: 55px;
+}
+.CardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+.CardInfo h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1C2B62;
+}
+.CardInfo span {
+    color: #1C2B62;
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
+}
+.CardInfo p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1C2B62;
+}
+.CardInfo button {
+    border: 2px solid #C4CADF;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .CardUser {
+        flex-direction: column;
+        margin-inline: 10px;
+    }
+}
