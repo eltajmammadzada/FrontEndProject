@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #a22cff;
+    --text-color: #201e6d;
+    --border-radius: 4px;
+  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(119deg, #eddde7 0%, #dfdded 98.64%);
+}
+.card {
+  border-radius: 31px;
+  padding: 28px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white !important;
+  box-shadow: 0px 24px 60px 0px rgba(36, 30, 109, 0.14);
+}
+.card h2 {
+  color: #201e6d;
+  font-size: 18px;
+  font-style: normal;
+  padding-bottom: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  top: -35px;
+  z-index: -2;
+  left: 270px;
+  border-radius: 10px;
+  height: 625px;
+  background-color: #af78da;
+}
+.card::before {
+  position: absolute;
+  content: "";
+  top: -23px;
+  width: 20px;
+  left: 240px;
+  z-index: -3;
+  border-radius: 10px;
+  height: 600px;
+  background-color: #ef65ea;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.card input:first-of-type {
+  border-radius: 4px 4px 0px 0px;
+  padding: 12px;
+  border: 1px solid var(--Style, #dde4ed);
+}
+.card input:last-of-type {
+  border-radius: 0px 0px 4px 4px;
+  padding: 12px;
+  border: 1px solid #dde4ed;
+  margin-bottom: 16px;
+}
+.btn {
+  padding: 16px 0px;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  background: var(--primary-color);
+  box-shadow: 0px 4px 9px 0px rgba(95, 44, 255, 0.19);
+}
+.password {
+  color: #1c49e8;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  line-height: normal;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: #dde4ed;
+}
+
+.text {
+  margin: 0 8px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+.social a {
+    color:rgb(58, 149, 206);
+}
+.social a .fa-brands {
+    font-size: 32px;
+}
+.noaccount {
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.btn-group button {
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 16px;
+  cursor: pointer;
+  border: 1px solid #dde4ed;
+}
+@media screen and (max-width:500px) {
+   .card {
+    margin-inline: 10px;
+   }
+   .card::before {
+    left: 138px;
+    height: 550px;
+   }
+   .card::after {
+    left: 170px;
+    height: 577px;
+   }
+}
